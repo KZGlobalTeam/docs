@@ -2,9 +2,7 @@ import { defineConfig, HeadConfig } from "vitepress";
 
 import type { DefaultTheme } from "vitepress";
 
-const head: HeadConfig[] = [
-  ["link", { rel: "icon", type: "image/x-icon", href: "favicon.ico" }],
-];
+const head: HeadConfig[] = [];
 
 const nav: DefaultTheme.NavItem[] = [
   { text: "Discord", link: "https://discord.gg/csgokz" },
