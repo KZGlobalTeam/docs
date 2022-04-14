@@ -2,6 +2,8 @@ import { defineConfig, HeadConfig } from "vitepress";
 
 import type { DefaultTheme } from "vitepress";
 
+const isProduction = process.env.NODE_ENV === "production";
+
 const head: HeadConfig[] = [];
 
 const nav: DefaultTheme.NavItem[] = [
@@ -36,7 +38,7 @@ export default defineConfig({
   srcDir: "docs",
 
   head: head,
-  lastUpdated: true,
+  lastUpdated: isProduction,
 
   themeConfig: {
     nav: nav,
@@ -49,6 +51,6 @@ export default defineConfig({
     prevLinks: false,
     nextLinks: false,
 
-    lastUpdated: true,
+    lastUpdated: isProduction,
   },
 });
