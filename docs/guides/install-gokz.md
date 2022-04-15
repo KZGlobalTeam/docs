@@ -116,4 +116,4 @@ Install other useful plugins from the [Useful Plugins for KZ Server Owners](http
 
 ## 8. Apply for Global Whitelist (optional)
 
-Follow the [How to Get Your Server Whitelisted](https://forum.gokz.org/p/guide-whitelist) guide to get your server whitelisted.
+Follow the [GOKZ global whitelist guide](/guides/global-gokz) guide to get your server whitelisted.
