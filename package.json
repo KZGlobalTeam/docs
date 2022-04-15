@@ -1,8 +1,8 @@
 {
-  "name": "kz-docs",
+  "name": "csgo-kz-docs",
   "license": "MIT",
   "version": "0.0.0",
-  "description": "CSGO KZ Documentation",
+  "description": "CSGO KZ documentation",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",

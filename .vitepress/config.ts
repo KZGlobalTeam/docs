@@ -29,7 +29,7 @@ const sidebar: DefaultTheme.SideBarItem[] = [
 
 export default defineConfig({
   title: "CSGO KZ Docs",
-  description: "CSGO kreedz Documentation",
+  description: "CSGO KZ documentation",
 
   base: "/",
   srcDir: "docs",
