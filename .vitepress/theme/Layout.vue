@@ -1,36 +1,40 @@
 <template>
   <Layout>
     <template #navbar-search>
-      <ClientOnly>
-        <div class="mode-switch" @click="toggleMode">
-          {{ modeSwitchIcon }}
-        </div>
-      </ClientOnly>
+      <div
+        ref="modeEl"
+        class="mode-switch"
+        @click="toggleMode"
+      />
     </template>
   </Layout>
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted } from "vue";
+import { ref, onMounted } from "vue";
 
 import DefaultTheme from "vitepress/theme";
 
+const modeEl = ref();
 const Layout = DefaultTheme.Layout;
+
+const setIcon = () => {
+  const isLight = document.body.classList.contains("light");
+  modeEl.value.textContent = isLight ? "🌙" : "🌞";
+};
 
 const toggleMode = () => {
   document.body.classList.toggle("light");
+  setIcon();
 };
-
-const modeSwitchIcon = computed(() => {
-  const isLight = document.body.classList.contains("light");
-  return isLight ? "🌙" : "🌞";
-});
 
 onMounted(() => {
   const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)").matches;
   if (!prefersDark) {
     document.body.classList.add("light");
   }
+
+  setIcon();
 });
 </script>
 
