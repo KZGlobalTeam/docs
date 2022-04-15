@@ -13,7 +13,6 @@ const nav: DefaultTheme.NavItem[] = [
 const sidebar: DefaultTheme.SideBarItem[] = [
   {
     text: "Installation guides",
-    link: "/#installation-guides",
     children: [
       { text: "Install GOKZ", link: "/guides/install-gokz" },
       { text: "Install KZTimer", link: "/guides/install-kztimer" },
@@ -21,7 +20,6 @@ const sidebar: DefaultTheme.SideBarItem[] = [
   },
   {
     text: "Global whitelisting guides",
-    link: "/#global-whitelisting-guides",
     children: [
       { text: "GOKZ Global whitelisting", link: "/guides/global-gokz" },
       { text: "KZTimer Global whitelisting", link: "/guides/global-kztimer" },
