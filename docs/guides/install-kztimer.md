@@ -64,7 +64,20 @@ Restart your server and type `sm exts list` in the server console.
 <br>You should see the following line in the output: `DHooks (2.2.0-detours17)`.
 :::
 
-## 4. Installing KZTimer
+## 4. Installing MovementAPI
+
+1. Start by downloading the latest release of [MovementAPI](https://github.com/danzayau/MovementAPI/releases).
+
+2. Extract the files into your server's `csgo` directory.
+
+3. You should now have MovementAPI installed and working.
+
+::: info Confirm this step
+Restart your server and type `sm plugins list` in the server console.
+<br>You should see the following line in the output: `MovementAPI (2.2.0)`.
+:::
+
+## 5. Installing KZTimer
 
 1. Start by downloading the latest **non-upgrade** release of [KZTimer](https://bitbucket.org/kztimerglobalteam/kztimerglobal/downloads/).
 
@@ -91,14 +104,14 @@ Restart your server and type `sm plugins list` in the server console.
 <br>You should see the following line in the output: `KZTimerGlobal (1.100)`.
 :::
 
-## 5. KZTimer is installed
+## 6. KZTimer is installed
 
 You've finished installing KZTimer, the next steps are not required for a functional KZTimer server.
 
-## 6. Useful plugins (optional)
+## 7. Useful plugins (optional)
 
 Install other useful plugins from the [Useful Plugins for KZ Server Owners](https://forum.gokz.org/p/15-guide-plugins) guide.
 
-## 7. Apply for Global Whitelist (optional)
+## 8. Apply for Global Whitelist (optional)
 
-Follow the [How to Get Your Server Whitelisted](https://forum.gokz.org/p/guide-whitelist) guide to get your server whitelisted.
+Follow the [KZTimer global whitelist guide](/guides/global-kztimer) guide to get your server whitelisted.
