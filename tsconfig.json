@@ -11,7 +11,7 @@
     "resolveJsonModule": true,
 
     "jsx": "preserve",
-    "types": ["vitepress/client"],
+    "types": ["vitepress/client"]
   },
 
   "include": ["docs/**/*", ".vitepress/**/*"]
