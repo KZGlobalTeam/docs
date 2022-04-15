@@ -1,6 +1,5 @@
-import { defineConfig, HeadConfig } from "vitepress";
-
-import type { DefaultTheme } from "vitepress";
+import { defineConfig } from "vitepress";
+import type { DefaultTheme, HeadConfig } from "vitepress";
 
 const isProduction = process.env.NODE_ENV === "production";
 
