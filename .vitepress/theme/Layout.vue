@@ -1,32 +1,13 @@
 <template>
-  <Layout>
-    <template #navbar-search>
-      <div
-        ref="modeEl"
-        class="mode-switch"
-        @click="toggleMode"
-      />
-    </template>
-  </Layout>
+  <Layout />
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { onMounted } from "vue";
 
 import DefaultTheme from "vitepress/theme";
 
-const modeEl = ref();
 const Layout = DefaultTheme.Layout;
-
-const setIcon = () => {
-  const isLight = document.body.classList.contains("light");
-  modeEl.value.textContent = isLight ? "🌙" : "🌞";
-};
-
-const toggleMode = () => {
-  document.body.classList.toggle("light");
-  setIcon();
-};
 
 onMounted(() => {
   const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)").matches;
@@ -34,14 +15,26 @@ onMounted(() => {
     document.body.classList.add("light");
   }
 
-  setIcon();
+  const [navbar] = document.getElementsByClassName("nav-links");
+
+  const toggleMode = (el: MouseEvent) => {
+    document.body.classList.toggle("light");
+
+    const element = el.target as HTMLElement;
+    element.textContent = getModeSwitchIcon();
+  };
+
+  const getModeSwitchIcon = () => {
+    const isLight = document.body.classList.contains("light");
+    return isLight ? "🌙" : "🌞";
+  };
+
+  const modeSwitchEl = document.createElement("div");
+  modeSwitchEl.onclick = toggleMode;
+  modeSwitchEl.textContent = getModeSwitchIcon();
+  modeSwitchEl.style.cursor = "pointer";
+  modeSwitchEl.style.paddingLeft = "16px";
+
+  navbar.appendChild(modeSwitchEl);
 });
 </script>
-
-<style scoped>
-.mode-switch {
-  cursor: pointer;
-  padding-top: 4px;
-  padding-left: 16px;
-}
-</style>
