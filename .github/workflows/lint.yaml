@@ -3,7 +3,10 @@ name: lint-typecheck
 on:
   push:
     branches: [master]
-    paths-ignore: [".github/workflows"]
+    paths-ignore:
+      - "README.md"
+      - ".gitignore"
+      - ".github/workflows"
   pull_request:
     branches: [master]
 
