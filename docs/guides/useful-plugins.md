@@ -50,7 +50,6 @@ If you are having trouble with a plugin, try the **#support** channel in [our Di
   author="Szwagi, zer0.k"
   download="https://github.com/zer0k-z/more-stats"
   description="Displays statistics about your bhops"
-  :categories="['In GOKZ']"
 />
 
 ## Miscellaneous
