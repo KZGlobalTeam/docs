@@ -1,0 +1,42 @@
+name: preview
+
+on:
+  pull_request_target:
+    branches:
+      - master
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            const head = context.payload.pull_request.head;
+
+            const headRef = encodeURIComponent(head.ref);
+            const headRepo = encodeURIComponent(head.repo.name);
+            const headOwner = encodeURIComponent(head.repo.owner.login);
+
+            const params = new URLSearchParams();
+            params.set("embed", "1");
+            params.set("view", "preview");
+            params.set("hideExplorer", "1");
+
+            const previewLink = `https://stackblitz.com/github/${headOwner}/${headRepo}/tree/${headRef}?${params}`;
+
+            const lines = [
+              "Hey there, thank you for the pull request!",
+              "",
+              "Below is a link to preview the changes:",
+              previewLink,
+              "",
+              `[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](${previewLink})`
+            ];
+
+            github.rest.issues.createComment({
+              repo: context.repo.repo,
+              owner: context.repo.owner,
+              issue_number: context.issue.number,
+              body: lines.join("\n")
+            });
