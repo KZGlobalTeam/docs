@@ -1,11 +1,15 @@
 # CSGO KZ Docs
 
-Documentation for CSGO Kreedz related things, including but not limited to guides.
+Documentation for CSGO kreedz related things, including but not limited to guides.
 > <https://docs.gokz.org>.
 
 ![Build status](https://img.shields.io/github/workflow/status/kzglobalteam/docs/build/master?style=for-the-badge&color=3eaf7c)
 ![Open issues](https://img.shields.io/github/issues/kzglobalteam/docs?style=for-the-badge&color=3eaf7c)
 ![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/kzglobalteam/docs?style=for-the-badge&color=3eaf7c)
+
+## Feedback
+
+If you have any suggestions to the documentation, please don't hesitate to [open an issue](https://github.com/KZGlobalTeam/docs/issues).
 
 ## Running locally
 
