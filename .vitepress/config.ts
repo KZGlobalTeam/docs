@@ -12,6 +12,10 @@ const nav: DefaultTheme.NavItem[] = [
 
 const sidebar: DefaultTheme.SideBarItem[] = [
   {
+    text: "Useful plugins",
+    link: "/guides/useful-plugins",
+  },
+  {
     text: "Installation guides",
     children: [
       { text: "Install GOKZ", link: "/guides/install-gokz" },
