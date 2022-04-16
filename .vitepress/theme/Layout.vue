@@ -33,8 +33,8 @@ onMounted(() => {
   modeSwitchEl.onclick = toggleMode;
   modeSwitchEl.textContent = getModeSwitchIcon();
   modeSwitchEl.style.cursor = "pointer";
-  modeSwitchEl.style.paddingTop = "4px";
-  modeSwitchEl.style.marginLeft = "16px";
+  modeSwitchEl.style.marginTop = "0.25rem";
+  modeSwitchEl.style.marginLeft = "1.5rem";
 
   navbar.appendChild(modeSwitchEl);
 });
