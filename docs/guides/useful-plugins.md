@@ -28,10 +28,10 @@ If you are having trouble with a plugin, try the **#support** channel in [our Di
 />
 
 <Plugin
-  name="GOKZ Scoreboard Plugin"
+  name="GOKZ Scoreboard Timer"
   author="Ruto"
   download="https://github.com/DevRuto/GOKZ-Scoreboard-Timer"
-  description="Shows Time in Kills, Checkpoints in Assists, and Teleports in Deaths column in the CSGO scoreboard"
+  description="Shows time in kills, checkpoints in assists, and teleports in deaths column in the scoreboard"
   :categories="['In KZTimer']"
 />
 
@@ -40,8 +40,16 @@ If you are having trouble with a plugin, try the **#support** channel in [our Di
 <Plugin
   name="Distbug"
   author="GameChaos"
-  download="https://github.com/DevRuto/KZTimerRecorder"
-  description="Gives you more details on your jumpstats as well as stats on failed jumps (failstats)"
+  download="https://bitbucket.org/GameChaos/distbug"
+  description="Gives you more details on your jumpstats as well as stats on failed jumps"
+  :categories="['In GOKZ']"
+/>
+
+<Plugin
+  name="GlobalPB"
+  author="Szwagi"
+  download="https://github.com/szwagi/globalpb"
+  description="Lets players see their global personal best"
   :categories="['In GOKZ']"
 />
 
@@ -68,6 +76,14 @@ If you are having trouble with a plugin, try the **#support** channel in [our Di
   download="https://github.com/e54385991/console-cleaner"
   description="Gets rid of Datatable warnings spammed in the console"
   :categories="['In GOKZ']"
+/>
+
+<Plugin
+  name="GOKZ Discord"
+  author="zer0k-z"
+  download="https://github.com/zer0k-z/gokz-discord"
+  description="Posts GOKZ server records to a Discord channel using webhooks"
+  :categories="['GOKZ only']"
 />
 
 <Plugin
@@ -110,7 +126,7 @@ If you are having trouble with a plugin, try the **#support** channel in [our Di
 <Plugin
   name="CSGO Particle Auto Precacher"
   author="Copypaste Slim, zer0k_z"
-  download="https://bitbucket.org/zer0k_z/csgo-particle-auto-precacher/downloads"
+  download="https://bitbucket.org/zer0k_z/csgo-particle-auto-precacher"
   description="Allows players to see custom particles on certain maps like bkz_apricity_v2 and others"
   :categories="['In KZTimer']"
 />
