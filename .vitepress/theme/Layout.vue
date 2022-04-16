@@ -15,7 +15,7 @@ onMounted(() => {
     document.body.classList.add("light");
   }
 
-  const [navbar] = document.getElementsByClassName("nav-links");
+  const [navbar] = document.getElementsByClassName("nav-bar");
 
   const toggleMode = (el: MouseEvent) => {
     document.body.classList.toggle("light");
@@ -26,14 +26,15 @@ onMounted(() => {
 
   const getModeSwitchIcon = () => {
     const isLight = document.body.classList.contains("light");
-    return isLight ? "🌙" : "🌞";
+    return isLight ? "🌙" : "🔆";
   };
 
   const modeSwitchEl = document.createElement("div");
   modeSwitchEl.onclick = toggleMode;
   modeSwitchEl.textContent = getModeSwitchIcon();
   modeSwitchEl.style.cursor = "pointer";
-  modeSwitchEl.style.paddingLeft = "16px";
+  modeSwitchEl.style.paddingTop = "4px";
+  modeSwitchEl.style.marginLeft = "16px";
 
   navbar.appendChild(modeSwitchEl);
 });
