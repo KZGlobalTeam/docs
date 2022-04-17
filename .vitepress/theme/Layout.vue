@@ -13,6 +13,7 @@
               <span class="text">{{ prevLink.text }}</span>
             </a>
           </div>
+
           <div class="next">
             <a
               v-if="nextLink"
@@ -50,7 +51,7 @@ const prevLink = computed(() => getLink("prevLink"));
 const nextLink = computed(() => getLink("nextLink"));
 
 const hasLinks = computed(() => {
-  return prevLink.value && nextLink.value;
+  return prevLink.value || nextLink.value;
 });
 
 const getLink = (type: "prevLink" | "nextLink") => {
