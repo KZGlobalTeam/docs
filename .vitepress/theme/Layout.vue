@@ -20,9 +20,6 @@ onMounted(() => {
 
   const [navbar] = document.getElementsByClassName("nav-bar");
 
-  const darkVNode = createVNode(MoonIcon);
-  const lightVNode = createVNode(SunIcon);
-
   const modeSwitchEl = document.createElement("button");
   modeSwitchEl.className = "mode-switch";
 
@@ -34,8 +31,8 @@ onMounted(() => {
   const renderIconVNode = () => {
     const isLight = document.body.classList.contains("light");
 
-    const iconVNode = isLight ? darkVNode : lightVNode;
-    render(iconVNode, modeSwitchEl, true);
+    const iconVNode = isLight ? createVNode(MoonIcon) : createVNode(SunIcon);
+    render(iconVNode, modeSwitchEl);
   };
 
   renderIconVNode();
