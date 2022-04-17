@@ -49,9 +49,9 @@ const Layout = DefaultTheme.Layout;
 const prevLink = computed(() => getLink("prevLink"));
 const nextLink = computed(() => getLink("nextLink"));
 
-const hasLinks = () => {
-  return prevLink.value || nextLink.value;
-};
+const hasLinks = computed(() => {
+  return prevLink.value && nextLink.value;
+});
 
 const getLink = (type: "prevLink" | "nextLink") => {
   const link = data.frontmatter.value?.[type];
