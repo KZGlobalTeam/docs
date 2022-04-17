@@ -7,8 +7,8 @@ import { createVNode, render, onMounted } from "vue";
 
 import DefaultTheme from "vitepress/theme";
 
-import DarkIcon from "./components/DarkIcon.vue";
-import LightIcon from "./components/LightIcon.vue";
+import SunIcon from "./components/SunIcon.vue";
+import MoonIcon from "./components/MoonIcon.vue";
 
 const Layout = DefaultTheme.Layout;
 
@@ -20,8 +20,8 @@ onMounted(() => {
 
   const [navbar] = document.getElementsByClassName("nav-bar");
 
-  const darkVNode = createVNode(DarkIcon);
-  const lightVNode = createVNode(LightIcon);
+  const darkVNode = createVNode(MoonIcon);
+  const lightVNode = createVNode(SunIcon);
 
   const modeSwitchEl = document.createElement("button");
   modeSwitchEl.className = "mode-switch";
