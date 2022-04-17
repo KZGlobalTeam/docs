@@ -1,6 +1,7 @@
 ---
 title: Install GOKZ
 description: Installation guide for GOKZ
+nextLink: /guides/global-gokz
 ---
 
 # Table of contents

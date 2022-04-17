@@ -1,6 +1,7 @@
 ---
 title: KZTimer global whitelist guide
 description: Guide for KZTimer on how to get your server globally whitelisted
+prevLink: /guides/install-kztimer
 ---
 
 ## Requirements

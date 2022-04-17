@@ -1,16 +1,67 @@
 <template>
-  <Layout />
+  <Layout>
+    <template #page-bottom>
+      <div v-if="hasLinks" class="next-and-prev-link">
+        <div class="container">
+          <div class="prev">
+            <a
+              v-if="prevLink"
+              class="link"
+              :href="withBase(prevLink.link)"
+            >
+              <ArrowLeft class="icon icon-prev" />
+              <span class="text">{{ prevLink.text }}</span>
+            </a>
+          </div>
+          <div class="next">
+            <a
+              v-if="nextLink"
+              class="link"
+              :href="withBase(nextLink.link)"
+            >
+              <span class="text">{{ nextLink.text }}</span>
+              <ArrowRight class="icon icon-next" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </template>
+  </Layout>
 </template>
 
 <script setup lang="ts">
-import { createVNode, render, onMounted } from "vue";
+import { createVNode, render, computed, onMounted } from "vue";
+import { useData, withBase } from "vitepress";
 
 import DefaultTheme from "vitepress/theme";
 
 import SunIcon from "./components/SunIcon.vue";
 import MoonIcon from "./components/MoonIcon.vue";
 
+import ArrowLeft from "./components/ArrowLeft.vue";
+import ArrowRight from "./components/ArrowRight.vue";
+
+import { getFlatSideBarLinks } from "./utils/sidebar";
+
+const data = useData();
 const Layout = DefaultTheme.Layout;
+
+const prevLink = computed(() => getLink("prevLink"));
+const nextLink = computed(() => getLink("nextLink"));
+
+const hasLinks = () => {
+  return prevLink.value || nextLink.value;
+};
+
+const getLink = (type: "prevLink" | "nextLink") => {
+  const link = data.frontmatter.value?.[type];
+  if (!link) {
+    return;
+  }
+
+  const candicates = getFlatSideBarLinks(data.theme.value.sidebar);
+  return candicates.find((c) => c.link === link);
+};
 
 onMounted(() => {
   const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)").matches;
@@ -39,3 +90,65 @@ onMounted(() => {
   navbar.appendChild(modeSwitchEl);
 });
 </script>
+
+<style scoped>
+.next-and-prev-link {
+  padding-top: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--c-divider);
+  padding-top: 1rem;
+}
+
+.prev,
+.next {
+  display: flex;
+  flex-shrink: 0;
+  width: 50%;
+}
+
+.prev {
+  justify-content: flex-start;
+  padding-right: 12px;
+}
+
+.next {
+  justify-content: flex-end;
+  padding-left: 12px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.text {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.icon {
+  display: block;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  fill: var(--c-text);
+  transform: translateY(1px);
+}
+
+.icon-prev {
+  margin-right: 8px;
+}
+
+.icon-next {
+  margin-left: 8px;
+}
+</style>
