@@ -1,6 +1,8 @@
 <template>
   <div class="plugin">
-    <span class="author">{{ authorWithSuffix() }}</span>
+    <span class="author">
+      {{ authorWithSuffix }}
+    </span>
 
     <a
       :href="download"
@@ -11,8 +13,12 @@
       {{ name }} <OutboundLink />
     </a>
 
-    <span v-for="(tag, index) in tags" :key="index">
-      <span class="badge">{{ tag }}</span>
+    <span
+      v-for="(tag, index) in tags"
+      :key="index"
+      class="badge"
+    >
+      {{ tag }}
     </span>
 
     <div class="description">
@@ -22,6 +28,8 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from "vue";
+
 import OutboundLink from "../.vitepress/theme/components/OutboundLink.vue";
 
 interface Props {
@@ -35,10 +43,10 @@ interface Props {
 
 const props = defineProps<Props>();
 
-const authorWithSuffix = () => {
+const authorWithSuffix = computed(() => {
   const suffix = props.author.endsWith("s") ? "'" : "'s";
   return props.author + suffix;
-};
+});
 </script>
 
 <style scoped>
