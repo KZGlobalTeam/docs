@@ -64,7 +64,6 @@ const authorWithSuffix = () => {
 }
 
 .badge {
-  color: var(--code-inline-bg-color);
   background-color: var(--c-brand-light);
 
   font-size: 0.80rem;
