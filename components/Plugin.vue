@@ -1,18 +1,18 @@
 <template>
   <div class="plugin">
-    <span class="author">{{ author }}'s</span>
+    <span class="author">{{ authorWithSuffix() }}</span>
 
     <a
+      :href="download"
       class="link"
       target="_blank"
       rel="noopener noreferrer"
-      :href="download"
     >
-      {{ name }}
+      {{ name }} <OutboundLink />
     </a>
 
-    <span v-for="(category, index) in categories" :key="index">
-      <span class="badge">{{ category }}</span>
+    <span v-for="(tag, index) in tags" :key="index">
+      <span class="badge">{{ tag }}</span>
     </span>
 
     <div class="description">
@@ -22,15 +22,23 @@
 </template>
 
 <script setup lang="ts">
+import OutboundLink from "../.vitepress/theme/components/OutboundLink.vue";
+
 interface Props {
   name: string;
   author: string;
   download: string;
-  categories: string[];
   description: string;
+
+  tags?: string[];
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
+
+const authorWithSuffix = () => {
+  const suffix = props.author.endsWith("s") ? "'" : "'s";
+  return props.author + suffix;
+};
 </script>
 
 <style scoped>

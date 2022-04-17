@@ -32,7 +32,7 @@ If you are having trouble with a plugin, try the **#support** channel in [our Di
   author="Ruto"
   download="https://github.com/DevRuto/GOKZ-Scoreboard-Timer"
   description="Shows time in kills, checkpoints in assists, and teleports in deaths column in the scoreboard"
-  :categories="['In KZTimer']"
+  :tags="['In KZTimer']"
 />
 
 ## Statistics
@@ -42,7 +42,7 @@ If you are having trouble with a plugin, try the **#support** channel in [our Di
   author="GameChaos"
   download="https://bitbucket.org/GameChaos/distbug"
   description="Gives you more details on your jumpstats as well as stats on failed jumps"
-  :categories="['In GOKZ']"
+  :tags="['In GOKZ']"
 />
 
 <Plugin
@@ -50,7 +50,7 @@ If you are having trouble with a plugin, try the **#support** channel in [our Di
   author="Szwagi"
   download="https://github.com/szwagi/globalpb"
   description="Lets players see their global personal best"
-  :categories="['In GOKZ']"
+  :tags="['In GOKZ']"
 />
 
 <Plugin
@@ -67,7 +67,7 @@ If you are having trouble with a plugin, try the **#support** channel in [our Di
   author="Bot Benson"
   download="https://forums.alliedmods.net/showthread.php?t=310542"
   description="Mostly fixes the issue where players experience their game crashing on map changes"
-  :categories="['Recommended']"
+  :tags="['Recommended']"
 />
 
 <Plugin
@@ -75,7 +75,7 @@ If you are having trouble with a plugin, try the **#support** channel in [our Di
   author="e54385991"
   download="https://github.com/e54385991/console-cleaner"
   description="Gets rid of Datatable warnings spammed in the console"
-  :categories="['In GOKZ']"
+  :tags="['In GOKZ']"
 />
 
 <Plugin
@@ -105,7 +105,7 @@ If you are having trouble with a plugin, try the **#support** channel in [our Di
   author="GameChaos"
   download="https://bitbucket.org/GameChaos/gcmeasure"
   description="Enables players to measure distances between gaps as well as height differences"
-  :categories="['In GOKZ']"
+  :tags="['In GOKZ']"
 />
 
 <Plugin
@@ -120,7 +120,7 @@ If you are having trouble with a plugin, try the **#support** channel in [our Di
   author="Ruto"
   download="https://github.com/DevRuto/KZTimerRecorder"
   description="Allows you to save GOKZ server record replays on your KZTimer server"
-  :categories="['In GOKZ']"
+  :tags="['In GOKZ']"
 />
 
 <Plugin
@@ -128,7 +128,7 @@ If you are having trouble with a plugin, try the **#support** channel in [our Di
   author="Copypaste Slim, zer0k_z"
   download="https://bitbucket.org/zer0k_z/csgo-particle-auto-precacher"
   description="Allows players to see custom particles on certain maps like bkz_apricity_v2 and others"
-  :categories="['In KZTimer']"
+  :tags="['In KZTimer']"
 />
 
 <Plugin
