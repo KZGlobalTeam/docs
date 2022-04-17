@@ -3,9 +3,12 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue";
+import { createVNode, render, onMounted } from "vue";
 
 import DefaultTheme from "vitepress/theme";
+
+import DarkIcon from "./components/DarkIcon.vue";
+import LightIcon from "./components/LightIcon.vue";
 
 const Layout = DefaultTheme.Layout;
 
@@ -17,25 +20,25 @@ onMounted(() => {
 
   const [navbar] = document.getElementsByClassName("nav-bar");
 
-  const toggleMode = (el: MouseEvent) => {
+  const darkVNode = createVNode(DarkIcon);
+  const lightVNode = createVNode(LightIcon);
+
+  const modeSwitchEl = document.createElement("button");
+  modeSwitchEl.className = "mode-switch";
+
+  modeSwitchEl.onclick = () => {
     document.body.classList.toggle("light");
-
-    const element = el.target as HTMLElement;
-    element.textContent = getModeSwitchIcon();
+    renderIconVNode();
   };
 
-  const getModeSwitchIcon = () => {
+  const renderIconVNode = () => {
     const isLight = document.body.classList.contains("light");
-    return isLight ? "🌙" : "🔆";
+
+    const iconVNode = isLight ? darkVNode : lightVNode;
+    render(iconVNode, modeSwitchEl, true);
   };
 
-  const modeSwitchEl = document.createElement("div");
-  modeSwitchEl.onclick = toggleMode;
-  modeSwitchEl.textContent = getModeSwitchIcon();
-  modeSwitchEl.style.cursor = "pointer";
-  modeSwitchEl.style.marginTop = "0.25rem";
-  modeSwitchEl.style.marginLeft = "1.5rem";
-
+  renderIconVNode();
   navbar.appendChild(modeSwitchEl);
 });
 </script>
