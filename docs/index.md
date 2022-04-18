@@ -15,4 +15,4 @@ description: Home page
 
 # Uncategorized guides
 
-- [Useful plugins guide](/guides/useful-plugins/)
+- [Useful plugins guide](/guides/useful-plugins)
