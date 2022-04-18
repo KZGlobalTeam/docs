@@ -12,7 +12,7 @@ const nav: DefaultTheme.NavItem[] = [
 
 const sidebar: DefaultTheme.SideBarItem[] = [
   {
-    text: "Useful plugins",
+    text: "Useful plugins guide",
     link: "/guides/useful-plugins/",
   },
   {

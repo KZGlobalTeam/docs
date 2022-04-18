@@ -1,5 +1,5 @@
 ---
-title: Useful plugins
+title: Useful plugins guide
 description: Useful plugins for KZ server owners
 ---
 
@@ -7,7 +7,9 @@ description: Useful plugins for KZ server owners
 import Plugins from "./Plugins.vue";
 </script>
 
-# Introduction
+# {{ $frontmatter.title }}
+
+This guide consists of useful plugins for KZ server owners.
 
 :::danger
 All these plugins are third-party and are without warranty from us.
