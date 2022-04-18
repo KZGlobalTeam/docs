@@ -12,10 +12,6 @@ const nav: DefaultTheme.NavItem[] = [
 
 const sidebar: DefaultTheme.SideBarItem[] = [
   {
-    text: "Useful plugins guide",
-    link: "/guides/useful-plugins/",
-  },
-  {
     text: "Installation guides",
     children: [
       { text: "Install GOKZ", link: "/guides/install-gokz" },
@@ -27,6 +23,12 @@ const sidebar: DefaultTheme.SideBarItem[] = [
     children: [
       { text: "GOKZ Global whitelisting", link: "/guides/global-gokz" },
       { text: "KZTimer Global whitelisting", link: "/guides/global-kztimer" },
+    ],
+  },
+  {
+    text: "Uncategorized guides",
+    children: [
+      { text: "Useful plugins guide", link: "/guides/useful-plugins/" },
     ],
   },
 ];

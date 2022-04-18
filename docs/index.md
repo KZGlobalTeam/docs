@@ -12,3 +12,7 @@ description: Home page
 
 - [GOKZ global whitelisting guide](/guides/global-gokz)
 - [KZTimer global whitelisting guide](/guides/global-kztimer)
+
+# Uncategorized guides
+
+- [Useful plugins guide](/guides/useful-plugins/)
