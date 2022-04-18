@@ -13,7 +13,7 @@
       {{ plugin.name }}  <OutboundLink />
     </a>
 
-    <span class="plugin-author">{{ plugin.author }}</span>
+    by <span class="plugin-author">{{ plugin.author }}</span>
 
     <span
       v-for="tag in plugin.tags"
@@ -59,19 +59,15 @@ const plugins = computed(() => {
 
 .plugin-author {
   color: var(--c-brand);
-  margin-left: 4px;
-}
-
-.plugin-author::before {
-  color: var(--c-text);
-  content: "by ";
+  padding-right: 8px;
 }
 
 .plugin-description {
-  margin-top: 6px;
+  padding-top: 8px;
 }
 
 .badge {
+  display: inline-block;
   background-color: var(--c-brand-light);
 
   font-size: 0.75rem;
@@ -79,9 +75,10 @@ const plugins = computed(() => {
   font-family: var(--font-family-mono);
 
   border-radius: 10em;
+
+  margin: 0.75rem 0.75rem 0 0;
   padding: 0.25rem 0.75rem 0.25rem 0.75rem;
 
-  margin-left: 6px;
   text-align: center;
   text-transform: uppercase;
 }
