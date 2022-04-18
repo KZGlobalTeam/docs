@@ -1,7 +1,8 @@
 ---
 title: Install KZTimer
 description: Installation guide for KZTimer
-nextLink: /guides/global-kztimer
+links:
+  next: /guides/global-kztimer
 ---
 
 # Table of contents

@@ -1,7 +1,8 @@
 ---
 title: GOKZ global whitelist guide
 description: Guide for GOKZ on how to get your server globally whitelisted
-prevLink: /guides/install-gokz
+links:
+  prev: /guides/install-gokz
 ---
 
 ## Requirements

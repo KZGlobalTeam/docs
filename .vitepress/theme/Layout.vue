@@ -9,7 +9,7 @@
               class="link"
               :href="withBase(prevLink.link)"
             >
-              <ArrowLeft class="icon icon-prev" />
+              <ArrowLeftIcon class="icon icon-prev" />
               <span class="text">{{ prevLink.text }}</span>
             </a>
           </div>
@@ -21,7 +21,7 @@
               :href="withBase(nextLink.link)"
             >
               <span class="text">{{ nextLink.text }}</span>
-              <ArrowRight class="icon icon-next" />
+              <ArrowRightIcon class="icon icon-next" />
             </a>
           </div>
         </div>
@@ -39,23 +39,23 @@ import DefaultTheme from "vitepress/theme";
 import SunIcon from "./components/SunIcon.vue";
 import MoonIcon from "./components/MoonIcon.vue";
 
-import ArrowLeft from "./components/ArrowLeft.vue";
-import ArrowRight from "./components/ArrowRight.vue";
+import ArrowLeftIcon from "./components/ArrowLeftIcon.vue";
+import ArrowRightIcon from "./components/ArrowRightIcon.vue";
 
 import { getFlatSideBarLinks } from "./utils/sidebar";
 
 const data = useData();
 const Layout = DefaultTheme.Layout;
 
-const prevLink = computed(() => getLink("prevLink"));
-const nextLink = computed(() => getLink("nextLink"));
+const prevLink = computed(() => getLink("prev"));
+const nextLink = computed(() => getLink("next"));
 
 const hasLinks = computed(() => {
   return prevLink.value || nextLink.value;
 });
 
-const getLink = (type: "prevLink" | "nextLink") => {
-  const link = data.frontmatter.value?.[type];
+const getLink = (type: "prev" | "next") => {
+  const link = data.frontmatter.value?.links?.[type];
   if (!link) {
     return;
   }
