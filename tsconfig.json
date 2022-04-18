@@ -14,5 +14,5 @@
     "types": ["vitepress/client"]
   },
 
-  "include": ["docs/**/*", ".vitepress/**/*"]
+  "include": ["docs/**/*", "components/**/*", ".vitepress/**/*"]
 }
