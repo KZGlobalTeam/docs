@@ -1,4 +1,5 @@
-import "./Layout.css";
+import "./styles/dark.css";
+import "./styles/main.css";
 
 import { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
