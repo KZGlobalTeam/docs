@@ -4,7 +4,7 @@ description: Useful plugins for KZ server owners
 ---
 
 <script setup>
-import Plugins from "./Plugins.vue";
+import Plugins from "./useful-plugins/Plugins.vue";
 </script>
 
 # {{ $frontmatter.title }}

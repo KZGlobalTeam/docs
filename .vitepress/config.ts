@@ -28,7 +28,7 @@ const sidebar: DefaultTheme.SideBarItem[] = [
   {
     text: "Uncategorized guides",
     children: [
-      { text: "Useful plugins guide", link: "/guides/useful-plugins/" },
+      { text: "Useful plugins guide", link: "/guides/useful-plugins" },
     ],
   },
 ];

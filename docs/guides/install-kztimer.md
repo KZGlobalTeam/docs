@@ -110,7 +110,7 @@ You've finished installing KZTimer, the next steps are not required for a functi
 
 ## 7. Useful plugins (optional)
 
-Install other useful plugins from the [Useful plugins](/guides/useful-plugins/) guide.
+Install other useful plugins from the [Useful plugins](/guides/useful-plugins) guide.
 
 ## 8. Apply for Global Whitelist (optional)
 
