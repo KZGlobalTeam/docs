@@ -112,7 +112,7 @@ You've finished installing GOKZ, the next steps are not required for a functiona
 
 ## 7. Useful plugins (optional)
 
-Install other useful plugins from the [Useful Plugins for KZ Server Owners](https://forum.gokz.org/p/15-guide-plugins) guide.
+Install other useful plugins from the [Useful plugins](/guides/useful-plugins/) guide.
 
 ## 8. Apply for Global Whitelist (optional)
 
