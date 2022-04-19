@@ -1,9 +1,12 @@
 import { defineConfig } from "vitepress";
 import type { DefaultTheme, HeadConfig } from "vitepress";
 
+const description = "CSGO KZ documentation";
 const isProduction = process.env.NODE_ENV === "production";
 
-const head: HeadConfig[] = [];
+const head: HeadConfig[] = [
+  ["meta", { property: "og:description", content: description }],
+];
 
 const nav: DefaultTheme.NavItem[] = [
   { text: "Discord", link: "https://discord.gg/csgokz" },
@@ -35,7 +38,7 @@ const sidebar: DefaultTheme.SideBarItem[] = [
 
 export default defineConfig({
   title: "CSGO KZ Docs",
-  description: "CSGO KZ documentation",
+  description: description,
 
   base: "/",
   srcDir: "docs",
