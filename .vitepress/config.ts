@@ -2,7 +2,6 @@ import { defineConfig } from "vitepress";
 import type { DefaultTheme, HeadConfig } from "vitepress";
 
 const description = "CSGO KZ documentation";
-const isProduction = process.env.NODE_ENV === "production";
 
 const head: HeadConfig[] = [
   ["meta", { property: "og:description", content: description }],
@@ -44,7 +43,6 @@ export default defineConfig({
   srcDir: "docs",
 
   head: head,
-  lastUpdated: isProduction,
 
   themeConfig: {
     nav: nav,
@@ -56,7 +54,5 @@ export default defineConfig({
     editLinks: true,
     prevLinks: false,
     nextLinks: false,
-
-    lastUpdated: isProduction,
   },
 });
