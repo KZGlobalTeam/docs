@@ -52,6 +52,8 @@ export default defineConfig({
     docsDir: "docs",
 
     editLinks: true,
+    editLinkText: "Suggest changes to this page",
+
     prevLinks: false,
     nextLinks: false,
   },
