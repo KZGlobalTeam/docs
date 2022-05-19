@@ -34,7 +34,7 @@ import { computed } from "vue";
 
 import { data } from "./plugins.data";
 
-import OutboundLink from "../../../.vitepress/theme/components/OutboundLink.vue";
+import OutboundLink from "@theme/components/OutboundLink.vue";
 
 const props = defineProps<{ category: string }>();
 
