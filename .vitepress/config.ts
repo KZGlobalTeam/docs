@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 import type { DefaultTheme, HeadConfig } from "vitepress";
 
-const description = "CSGO KZ documentation";
+const description = "CS:GO Kreedz documentation";
 
 const head: HeadConfig[] = [
   ["meta", { property: "og:description", content: description }],
@@ -36,7 +36,7 @@ const sidebar: DefaultTheme.SideBarItem[] = [
 ];
 
 export default defineConfig({
-  title: "CSGO KZ Docs",
+  title: "CS:GO KZ Docs",
   description: description,
 
   base: "/",
