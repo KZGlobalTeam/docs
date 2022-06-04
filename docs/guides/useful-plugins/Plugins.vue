@@ -10,7 +10,7 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      {{ plugin.name }}  <OutboundLink />
+      {{ plugin.name }}
     </a>
 
     by <span class="plugin-author">{{ plugin.author }}</span>
@@ -18,7 +18,7 @@
     <span
       v-for="tag in plugin.tags"
       :key="tag"
-      class="badge"
+      class="plugin-badge"
     >
       {{ tag }}
     </span>
@@ -34,8 +34,6 @@ import { computed } from "vue";
 
 import { data } from "./plugins.data";
 
-import OutboundLink from "@theme/components/OutboundLink.vue";
-
 const props = defineProps<{ category: string }>();
 
 const plugins = computed(() => {
@@ -46,7 +44,7 @@ const plugins = computed(() => {
 
 <style scoped>
 .plugin-container {
-  padding-bottom: 32px;
+  padding: 16px 0 16px;
 }
 
 .plugin-name {
@@ -58,7 +56,7 @@ const plugins = computed(() => {
 }
 
 .plugin-author {
-  color: var(--c-brand);
+  font-weight: 500;
   padding-right: 8px;
 }
 
@@ -66,9 +64,9 @@ const plugins = computed(() => {
   padding-top: 8px;
 }
 
-.badge {
+.plugin-badge {
   display: inline-block;
-  background-color: var(--c-brand-light);
+  background-color: var(--vp-c-brand-light);
 
   font-size: 0.75rem;
   font-weight: bolder;
@@ -76,8 +74,8 @@ const plugins = computed(() => {
 
   border-radius: 10em;
 
-  margin: 0.75rem 0.75rem 0 0;
-  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+  margin: 0 0.25rem;
+  padding: 0.25rem 0.75rem;
 
   text-align: center;
   text-transform: uppercase;

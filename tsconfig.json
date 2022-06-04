@@ -12,11 +12,6 @@
 
     "jsx": "preserve",
     "types": ["vitepress/client"],
-
-    "paths": {
-      "@/*": ["./docs/*"],
-      "@theme/*": ["./.vitepress/theme/*"],
-    }
   },
 
   "include": ["docs/**/*", "components/**/*", ".vitepress/**/*"]
