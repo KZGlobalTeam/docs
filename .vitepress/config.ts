@@ -16,10 +16,8 @@ export default defineConfig({
     ],
 
     editLink: {
-      dir: "docs",
-      repo: "KZGlobalTeam/docs",
-      branch: "master",
       text: "View this page on GitHub",
+      pattern: "https://github.com/KZGlobalTeam/docs/edit/master/docs/:path",
     },
   },
 });
