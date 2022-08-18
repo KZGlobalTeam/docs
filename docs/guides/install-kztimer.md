@@ -43,24 +43,7 @@ Restart your server and type `sm version` in the server console.
 <br>You should see the following line in the output: `SourceMod Version Information`.
 :::
 
-## 3. Installing DHooks
-
-1. Start by downloading [DHooks](https://forums.alliedmods.net/showpost.php?p=2588686&postcount=589), the downloads can be found at the bottom of the post.
-
-::: danger
-Be sure to download the `sm110` version.
-:::
-
-2. Extract the files into your server's `csgo` directory.
-
-3. You should now have DHooks installed and working.
-
-::: info Confirm this step
-Restart your server and type `sm exts list` in the server console.
-<br>You should see the following line in the output: `DHooks (2.2.0-detours17)`.
-:::
-
-## 4. Installing MovementAPI
+## 3. Installing MovementAPI
 
 1. Start by downloading the latest release of [MovementAPI](https://github.com/danzayau/MovementAPI/releases).
 
@@ -73,7 +56,7 @@ Restart your server and type `sm plugins list` in the server console.
 <br>You should see the following line in the output: `MovementAPI (2.2.0)`.
 :::
 
-## 5. Installing KZTimer
+## 4. Installing KZTimer
 
 1. Start by downloading the latest **non-upgrade** release of [KZTimer](https://bitbucket.org/kztimerglobalteam/kztimerglobal/downloads/).
 
@@ -100,14 +83,14 @@ Restart your server and type `sm plugins list` in the server console.
 <br>You should see the following line in the output: `KZTimerGlobal (1.100)`.
 :::
 
-## 6. KZTimer is installed
+## 5. KZTimer is installed
 
 You've finished installing KZTimer, the next steps are not required for a functional KZTimer server.
 
-## 7. Useful plugins (optional)
+## 6. Useful plugins (optional)
 
 Install other useful plugins from the [Useful plugins](/guides/useful-plugins) guide.
 
-## 8. Apply for Global Whitelist (optional)
+## 7. Apply for Global Whitelist (optional)
 
 Follow the [KZTimer global whitelist guide](/guides/global-kztimer) guide to get your server whitelisted.
