@@ -21,14 +21,11 @@ jobs:
             const params = new URLSearchParams();
             params.set("embed", "1");
             params.set("view", "preview");
-            params.set("hideExplorer", "1");
 
             const previewLink = `https://stackblitz.com/github/${headOwner}/${headRepo}/tree/${headRef}?${params}`;
 
             const lines = [
-              "Hey there, thank you for the pull request!",
-              "",
-              "Below is a link to preview the changes:",
+              "Hey there, below is a link to preview the changes:",
               previewLink,
               "",
               `[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](${previewLink})`

@@ -27,8 +27,3 @@ StackBlitz lets you easily play around with the project without setting up a loc
 
 The project can imported with: <https://stackblitz.com/github/kzglobalteam/docs>.
 <br>This can also be used to preview your fork by changing `kzglobalteam` in the URL to your account name.
-
-## Environment variables
-
-- `NODE_ENV` - If set to "production", adds last updated to pages.
-- `DOCS_BASE_URL` - Base url for the documentation, defaults to `/`.

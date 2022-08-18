@@ -3,7 +3,7 @@ title: KZTimer global whitelist guide
 description: Guide for KZTimer on how to get your server globally whitelisted
 ---
 
-## Requirements
+# Requirements
 
 - Server owners cannot be globally banned or have a previous global ban.
 - Must not be a LAN or locally-hosted server. Regardless of whether it's open to the public.

@@ -3,11 +3,7 @@ title: Install KZTimer
 description: Installation guide for KZTimer
 ---
 
-# Table of contents
-
->[[toc]]
-
-## Before you begin
+# Before you begin
 
 1. This guide assumes that you have a working CS:GO server.
 2. This guide assumes that you have access to the server files.
