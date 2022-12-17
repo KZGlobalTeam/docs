@@ -33,8 +33,8 @@ If you are having trouble with a step, try the **#support** channel in [our Disc
 3. You should now have SteamWorks installed and working.
 
 ::: info Confirm this step
-Restart your server and type `sm exts list` in the server console.
-<br>You should see the following line in the output: `SteamWorks Extension (1.2.3)`.
+Run the following command in the server console: `sm exts load SteamWorks`.
+<br>You should see the following line in the output: `[SM] Loaded extension SteamWorks.ext.so successfully.`.
 :::
 
 ## 2. Install SMJansson
@@ -50,8 +50,8 @@ Be sure to download the file that ends with **binaries**.
 3. You should now have SMJansson installed and working.
 
 ::: info Confirm this step
-Restart your server and type `sm exts list` in the server console.
-<br>You should see the following line in the output: `SMJansson (2.3.1/3)`.
+Run the following command in the server console: `sm exts load smjansson`.
+<br>You should see the following line in the output: `[SM] Loaded extension smjansson.ext.so successfully.`.
 :::
 
 ## 3. Install GlobalRecords-SMPlugin
