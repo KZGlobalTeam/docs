@@ -33,8 +33,8 @@ If you are having trouble with a step, try the **#support** channel in [our Disc
 3. You should now have SteamWorks installed and working.
 
 ::: info Confirm this step
-Restart your server and type `sm exts list` in the server console.
-<br>You should see the following line in the output: `SteamWorks Extension (1.2.3)`.
+Run the following command in the server console: `sm exts load SteamWorks`.
+<br>You should see the following line in the output: `[SM] Loaded extension SteamWorks.ext.so successfully.`.
 :::
 
 ## 2. Install GlobalAPI plugin
