@@ -3,7 +3,7 @@
 Documentation for CSGO kreedz related things, including but not limited to guides.
 > <https://docs.gokz.org>.
 
-![Build status](https://img.shields.io/github/workflow/status/kzglobalteam/docs/build/master?style=for-the-badge&color=3eaf7c)
+![Build status](https://img.shields.io/github/actions/workflow/status/kzglobalteam/docs/build.yaml?branch=master&style=for-the-badge&color=3eaf7c)
 ![Open issues](https://img.shields.io/github/issues/kzglobalteam/docs?style=for-the-badge&color=3eaf7c)
 ![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/kzglobalteam/docs?style=for-the-badge&color=3eaf7c)
 
