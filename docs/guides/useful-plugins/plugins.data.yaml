@@ -80,7 +80,7 @@ miscellaneous:
 
   - name: KZTierMapchooser
     author: Kidev
-    download: https://forum.gokz.org/d/657-plugin-kztiermapchooser-map-tiers-displayed-in-votemap
+    download: https://github.com/Kidev/KZTierMapchooser
     description: A mapchooser that displays tiers next to maps in map votes
 
   - name: No More Sounds
