@@ -19,6 +19,10 @@ If you have any suggestions to the documentation, please don't hesitate to [open
 4. Start the dev server: `npm run dev`.
 5. Navigate to `http://localhost:3000` on your browser.
 
+## Running on Codeanywhere
+
+[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/kzglobalteam/docs)
+
 ## Running on StackBlitz
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/kzglobalteam/docs)
