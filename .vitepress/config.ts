@@ -4,6 +4,7 @@ export default defineConfig({
   title: "CS:GO KZ Docs",
   description: "CS:GO Kreedz documentation",
 
+  base: "/docs/",
   srcDir: "docs",
 
   themeConfig: {
